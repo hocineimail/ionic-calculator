@@ -12,45 +12,45 @@
       <ion-row>
        
         <ion-col size="12"  color="primary">
-            <div style="background-color: #f4f5f8"> 
-          0</div>
+            <div style="background-color: #f4f5f8;text-align: right"> 
+         <h1>{{Result}} </h1></div>
         </ion-col> 
         <hr>
         <ion-col size="3">
-        <ion-button expand="full"> 1</ion-button>
+        <ion-button expand="full" (click)="numberOne()"> 1</ion-button>
         </ion-col>
         <ion-col size="3">
-        <ion-button expand="full"> 2</ion-button>
+        <ion-button expand="full" (click)="NumberTwo()"> 2</ion-button>
         </ion-col>
         <ion-col size="3">
-        <ion-button expand="full"> 3</ion-button>
+        <ion-button expand="full" (click)="NumberThree()"> 3</ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button expand="full" color="success">+</ion-button>
+          <ion-button expand="full"  color="success">+</ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button expand="full">4</ion-button>
+          <ion-button expand="full" (click)="NumberFour()">4</ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button expand="full">5</ion-button>
+          <ion-button expand="full" (click)="NumberFive()">5</ion-button>
         </ion-col>
         <ion-col size="3">
-        <ion-button expand="full"> 6</ion-button>
+        <ion-button expand="full" (click)="NumberSix()"> 6</ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button expand="full" color="success">+</ion-button>
+          <ion-button expand="full" (click)="ButtonAdd()" color="success">+</ion-button>
           </ion-col>
           <ion-col size="3">
-            <ion-button expand="full">7</ion-button>
+            <ion-button expand="full" (click)="NumberSeven()">7</ion-button>
           </ion-col>
           <ion-col size="3">
-            <ion-button expand="full">8</ion-button>
+            <ion-button expand="full" (click)="NumberEight()">8</ion-button>
           </ion-col>
           <ion-col size="3">
-          <ion-button expand="full"> 9</ion-button>
+          <ion-button expand="full" (click)="NumberNine()"> 9</ion-button>
           </ion-col>
           <ion-col size="3">
-            <ion-button expand="full" color="success">=</ion-button>
+            <ion-button expand="full"  color="success">=</ion-button>
             </ion-col>
       </ion-row>
     </ion-grid>
