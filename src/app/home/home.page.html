@@ -12,10 +12,15 @@
       <ion-row>
        
         <ion-col size="12"  color="primary">
-            <div style="background-color: #f4f5f8;text-align: right"> 
+            <div style="background-color: #f4f5f8;text-align: right" *ngIf="state; else notstate"> 
          <h1>{{Calcul}} </h1>
          <h1>{{Result}} </h1>
         </div>
+        <ng-template #notstate>
+          <div style="background-color: #f4f5f8;text-align: right">
+              <h1> state on </h1>
+              <h1> </h1> </div>
+          </ng-template>
         </ion-col> 
         <hr>
         <ion-col size="6">
