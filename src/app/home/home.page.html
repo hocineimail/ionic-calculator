@@ -13,9 +13,17 @@
        
         <ion-col size="12"  color="primary">
             <div style="background-color: #f4f5f8;text-align: right"> 
-         <h1>{{Result}} </h1></div>
+         <h1>{{Calcul}} </h1>
+         <h1>{{Result}} </h1>
+        </div>
         </ion-col> 
         <hr>
+        <ion-col size="6">
+            <ion-button expand="full" color="success" (click)="Off()">OFF</ion-button>
+            </ion-col>
+            <ion-col size="6">
+                <ion-button expand="full"  color="danger"(click)="On()">On</ion-button>
+                </ion-col>
         <ion-col size="3">
         <ion-button expand="full" (click)="numberOne()"> 1</ion-button>
         </ion-col>
@@ -26,7 +34,7 @@
         <ion-button expand="full" (click)="NumberThree()"> 3</ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button expand="full"  color="success">+</ion-button>
+          <ion-button expand="full"  color="success">-</ion-button>
         </ion-col>
         <ion-col size="3">
           <ion-button expand="full" (click)="NumberFour()">4</ion-button>

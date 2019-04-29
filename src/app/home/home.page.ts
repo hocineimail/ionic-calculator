@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  Result = 0
-  Number = 0
+  Result 
+  Number = 0;
+  Calcul = "";
+  state = false
   numberOne() {
    this.Result = this.Number + 1
   }
@@ -58,4 +60,13 @@ export class HomePage {
      console.log("plus")
      this.Number = this.Result  
    }
+
+   Off() {
+   
+    this.state =  true
+  }
+  On() {
+   
+    this.state =  false
+  }
 }
